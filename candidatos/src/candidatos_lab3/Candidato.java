@@ -1,5 +1,7 @@
 package candidatos_lab3;
 
+import java.util.Comparator;
+
 public class Candidato {
     private String nome;
     private String partido;
@@ -7,7 +9,8 @@ public class Candidato {
     private int numVotos;
 
 
-    public Candidato(String nome, String partido, int idade, int numVotos){
+    public Candidato (String nome, String partido, int idade, int numVotos){
+
         this.nome = nome;
         this.partido = partido;
         this.idade = idade;
@@ -49,6 +52,12 @@ public class Candidato {
         return this.nome+ " "+this.partido+ " "+this.idade+ " "+this.numVotos;
 
     }
+
+
+
+
+
+
 
 
 }
