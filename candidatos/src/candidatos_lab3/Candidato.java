@@ -49,7 +49,7 @@ public class Candidato {
     }
 
     public String toString(){
-        return this.nome+ " "+this.partido+ " "+this.idade+ " "+this.numVotos;
+        return "Nome: "+nome +","+ "Partido: "+partido+ "," + "Idade: " +idade + ", " + "Numero de votos: "+ numVotos;
 
     }
 
