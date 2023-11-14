@@ -13,7 +13,7 @@ public class CandidatosMainTest {
     }
     @Test
     public void testCandidatosComMaisVotos(){
-        assertEquals("Nome: Mariana ,Partido: PT ,Idade: 19, Numero de votos: 12649",Util.candidatoComMaisVotos(Util.getCandidatos()));
+        assertEquals("Nome: Luiza Reis,Partido: Democratas,Idade: 35, Numero de votos: 25651",Util.candidatoComMaisVotos(Util.getCandidatos()));
     }
     @Test
     public void testCandidatoMaisVelho(){
