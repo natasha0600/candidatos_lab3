@@ -24,11 +24,13 @@ public class Util {
         Candidato candidato2 = new Candidato("Mariana ", "PT ", 19, 12649);
         Candidato candidato3 = new Candidato("Ernesto ", "Republicanos ", 20, 8546);
         Candidato candidato4 = new Candidato("Natasha", "PSDB", 70, 8000);
+        Candidato candidato5 = new Candidato("Luiza Reis", "Democratas",35,25651);
 
         candidatos.add(candidato1);
         candidatos.add(candidato2);
         candidatos.add(candidato3);
         candidatos.add(candidato4);
+        candidatos.add(candidato5);
         return candidatos;
     }
 
@@ -63,22 +65,25 @@ public class Util {
         return candidatoComMenosVotos.toString();
     }
 
-    public static void candidatoComMaisVotos(List<Candidato> candidatos) {
+    public static String candidatoComMaisVotos(List<Candidato> candidatos) {
         System.out.println("Candidato com mais votos: ");
         Candidato candidatoComMaisVotos = Collections.max(candidatos, Comparator.comparingInt(Candidato::getNumVotos));
         System.out.println(candidatoComMaisVotos);
+        return candidatoComMaisVotos.toString();
     }
 
-    public static void candidatoMaisVelho(List<Candidato> candidatos) {
+    public static String candidatoMaisVelho(List<Candidato> candidatos) {
         System.out.println("Candidato mais velho: ");
         Candidato candidatoMaisVelho = Collections.max(candidatos, Comparator.comparingInt(Candidato::getIdade));
         System.out.println(candidatoMaisVelho);
+        return candidatoMaisVelho.toString();
     }
 
-    public static void candidatoMaisNovo(List<Candidato> candidatos) {
+    public static String candidatoMaisNovo(List<Candidato> candidatos) {
         System.out.println("Candidato mais novo: ");
         Candidato candidatoMaisNovo = Collections.min(candidatos, Comparator.comparingInt(Candidato::getIdade));
         System.out.println(candidatoMaisNovo);
+        return candidatoMaisNovo.toString();
     }
 
     public static void listaCandidatos(List<Candidato> candidatos) {
